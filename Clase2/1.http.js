@@ -8,7 +8,7 @@ const processRequest = (req, res) => {
 
   if (req.url === '/') {
     res.end('<h1>Mi página</h1>')
-  } else if (req.url === '/imagen-super-bonita.png') {
+  } else if (req.url === '/imagen') {
     fs.readFile('./placa.png', (err, data) => {
       if (err) {
         res.statusCode = 500

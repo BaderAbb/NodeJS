@@ -1,0 +1,52 @@
+{
+  "id": "JJK-001",
+  "name": {
+    "first": "Satoru",
+    "last": "Gojo",
+    "kanji": "五条 悟"
+  },
+  "profile": {
+    "age": 28,
+    "birthday": "1989-12-07",
+    "height_cm": 190,
+    "gender": "Male",
+    "hair_color": "White",
+    "eye_color": "Light Blue"
+  },
+  "status": {
+    "grade": "Special Grade",
+    "affiliation": "Tokyo Jujutsu High",
+    "occupation": "Jujutsu Sorcerer / Teacher",
+    "is_alive": true
+  },
+  "abilities": {
+    "cursed_technique": {
+      "name": "Limitless",
+      "description": "A technique passed down in the Gojo family that brings the concept of 'infinity' into reality, allowing him to manipulate space at an atomic level.",
+      "inherited": true
+    },
+    "special_traits": [
+      "Six Eyes",
+      "Black Flash",
+      "Reverse Cursed Technique"
+    ],
+    "signature_moves": [
+      {
+        "name": "Cursed Technique Lapse: Blue",
+        "effect": "Amplifies the concept of negative numbers and distance, creating a magnetic effect of attraction."
+      },
+      {
+        "name": "Cursed Technique Reversal: Red",
+        "effect": "Generates a powerful repulsive force by flowing positive energy into the Limitless technique."
+      },
+      {
+        "name": "Hollow Technique: Purple",
+        "effect": "Combines Blue (attraction) and Red (repulsion) to create an imaginary mass that erases everything in its path."
+      }
+    ]
+  },
+  "domain_expansion": {
+    "name": "Unlimited Void",
+    "effect": "Floods the target's mind with an infinite amount of information, rendering them catatonic and unable to act."
+  }
+}
