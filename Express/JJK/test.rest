@@ -5,5 +5,5 @@ POST http://localhost:3000/data
 Content-Type: application/json
 
 {
-    "name": "itadori"
+    "name": "okkotsu"
 }
