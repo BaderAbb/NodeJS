@@ -1,0 +1,21 @@
+{
+  "name": "postgress",
+  "version": "1.0.0",
+  "description": "A full stack todo app with Node.js, Express, Postgres, and JWT",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch --env-file=.env src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bcryptjs": "^3.0.3",
+    "expres": "^0.0.5",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "postgres": "^3.4.8"
+  }
+}
