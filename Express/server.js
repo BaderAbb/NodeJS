@@ -8,20 +8,20 @@ const data = ['Satoru']
 app.use(express.json())
 
 app.get('/', (req, res) => {
-  console.log('yay, I hit an endpoint', req.method)
   res.send(`<body>
-            <h1>Data:<h1>
+            <h1>Data:</h1>
             <p>${JSON.stringify(data)}</p>
+            <a href="/dashboard">Dashboard</a>
             </body>`)
 })
 
-app.get('/test', (req, res) => {
-  console.log('yay, I hit another test endpoint', req.method)
-  res.sendStatus(200)
+app.get('/dashboard', (req, res) => {
+  res.send(`<h1>Dashboard</h1>
+            <a href="/">Home</a>`)
 })
 
-app.get('/gojo', (req, res) => {
-  res.send(JSON.stringify(satoruJSON))
+app.get('/test', (req, res) => {
+  res.status(208).send(JSON.stringify(satoruJSON))
 })
 
 app.post('/data', (req, res) => {
@@ -32,6 +32,10 @@ app.post('/data', (req, res) => {
   res.sendStatus(201)
 })
 
-app.delete()
+app.delete('/api/data', (req, res) => {
+  data.pop()
+  console.log('data deleted: ', data)
+  res.sendStatus(203)
+})
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
